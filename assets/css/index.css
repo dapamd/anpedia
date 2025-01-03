@@ -1,0 +1,113 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+main .content {
+    flex: 1;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    color: white !important;
+    background-color: teal !important;
+}
+.nav-link {
+  color: white !important;
+}
+.nav-link:hover {
+  color: paleturquoise  !important;
+}
+
+.itil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start; 
+  gap: 0.8rem;
+  width: 95%;
+  padding: 1rem;
+  border-radius: 8px;
+  color: white;
+  /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 -2px 4px rgba(255, 255, 255, 0.1);*/
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 -2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.card i {
+  font-size: 2rem;
+}
+
+.card.success {
+  background-color: darkcyan;
+}
+
+.card.process {
+  background-color: steelblue;
+}
+
+.card.failed {
+  background-color: orangered;
+}
+.info small {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 1.2rem; 
+  font-weight: 600;
+}
+
+.info p {
+  margin: 0; 
+  font-size: 1.2rem; 
+  font-weight: 550;
+}
+h5 {
+  font-weight: 600;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  text-align: center;
+  line-height: normal;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+.btn {
+  color: white;
+  background-color: #5AA5D9 !important;
+}
+.btn:hover {
+  color: white;
+  background-color: #4993C6 !important;
+}
